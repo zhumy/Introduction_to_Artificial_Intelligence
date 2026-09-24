@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">人群中个体 IQ 值的分布</title>
+  <desc id="desc">IQ 测验得分的正态分布示意，横轴标出 55 到 145 的 IQ 分值，曲线中标出常见比例。</desc>
+  <rect width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="46" text-anchor="middle" font-family="Arial, 'PingFang SC', sans-serif" font-size="28" font-weight="700" fill="#203e42">人群中个体 IQ 值的分布</text>
+  <line x1="72" y1="328" x2="688" y2="328" stroke="#203e42" stroke-width="3"/>
+  <path d="M72 328 C128 328 143 323 170 296 C203 263 230 202 257 141 C291 65 345 71 380 71 C415 71 469 65 503 141 C530 202 557 263 590 296 C617 323 632 328 688 328 L72 328 Z" fill="#69a8c8" opacity=".92"/>
+  <path d="M72 328 C128 328 143 323 170 296 C203 263 230 202 257 141 C291 65 345 71 380 71 C415 71 469 65 503 141 C530 202 557 263 590 296 C617 323 632 328 688 328" fill="none" stroke="#203e42" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#eef3f0" stroke-width="3">
+    <line x1="170" y1="328" x2="170" y2="296"/>
+    <line x1="257" y1="328" x2="257" y2="141"/>
+    <line x1="380" y1="328" x2="380" y2="72"/>
+    <line x1="503" y1="328" x2="503" y2="141"/>
+    <line x1="590" y1="328" x2="590" y2="296"/>
+  </g>
+  <g font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#203e42">
+    <text x="118" y="311" text-anchor="middle">0.2%</text>
+    <text x="213" y="291" text-anchor="middle">2.1%</text>
+    <text x="305" y="260" text-anchor="middle">13.6%</text>
+    <text x="335" y="226" text-anchor="middle">34.1%</text>
+    <text x="425" y="226" text-anchor="middle">34.1%</text>
+    <text x="455" y="260" text-anchor="middle">13.6%</text>
+    <text x="547" y="291" text-anchor="middle">2.1%</text>
+    <text x="642" y="311" text-anchor="middle">0.2%</text>
+  </g>
+  <g font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#203e42">
+    <text x="72" y="362" text-anchor="middle">55</text>
+    <text x="170" y="362" text-anchor="middle">70</text>
+    <text x="257" y="362" text-anchor="middle">85</text>
+    <text x="380" y="362" text-anchor="middle">100</text>
+    <text x="503" y="362" text-anchor="middle">115</text>
+    <text x="590" y="362" text-anchor="middle">130</text>
+    <text x="688" y="362" text-anchor="middle">145</text>
+  </g>
+  <text x="380" y="398" text-anchor="middle" font-family="Arial, 'PingFang SC', sans-serif" font-size="17" fill="#536b73">示意图：多数人集中在平均值附近，极高或极低分数较少。</text>
+</svg>

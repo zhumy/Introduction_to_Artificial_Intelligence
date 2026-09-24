@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 140" role="img" aria-label="Google Gemini 标志">
+  <defs>
+    <linearGradient id="gemini" x1="8%" y1="8%" x2="92%" y2="92%">
+      <stop offset="0" stop-color="#4285f4"/>
+      <stop offset=".33" stop-color="#9b72cb"/>
+      <stop offset=".66" stop-color="#e87186"/>
+      <stop offset="1" stop-color="#fbbc04"/>
+    </linearGradient>
+  </defs>
+  <path d="M75 8c4 39 22 57 61 61-39 4-57 22-61 61-4-39-22-57-61-61 39-4 57-22 61-61Z" fill="url(#gemini)"/>
+  <text x="150" y="84" fill="#303134" font-family="Arial, sans-serif" font-size="42" font-weight="600">Gemini</text>
+</svg>
