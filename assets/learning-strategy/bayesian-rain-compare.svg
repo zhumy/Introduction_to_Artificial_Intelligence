@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-labelledby="title desc">
+  <title id="title">贝叶斯方法预测降雨</title>
+  <desc id="desc">云量和湿度作为观测，结合降雨的先验概率和观测的似然，计算降雨的后验概率。</desc>
+  <rect width="680" height="330" fill="#fff"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26" fill="#2a4b4e">
+    <circle cx="76" cy="95" r="47" fill="#f6c8ad"/>
+    <circle cx="64" cy="89" r="14" fill="#fff" stroke="#81908d"/>
+    <circle cx="83" cy="80" r="18" fill="#fff" stroke="#81908d"/>
+    <circle cx="101" cy="91" r="13" fill="#fff" stroke="#81908d"/>
+    <rect x="50" y="92" width="63" height="13" rx="6" fill="#fff" stroke="#81908d"/>
+    <text x="76" y="159" text-anchor="middle">云量</text>
+    <circle cx="76" cy="230" r="47" fill="#f6c8ad"/>
+    <path d="M76 194 C63 216 58 225 58 237 A18 18 0 0 0 94 237 C94 225 88 215 76 194 Z" fill="#159ad3"/>
+    <text x="76" y="295" text-anchor="middle">湿度</text>
+    <text x="307" y="33" text-anchor="middle" font-size="21">由历史样本估计</text>
+    <path d="M130 95 L205 199 M130 230 L205 230" fill="none" stroke="#718b88" stroke-width="4"/>
+    <polygon points="205,199 192,193 204,185" fill="#718b88"/>
+    <polygon points="205,230 191,222 191,238" fill="#718b88"/>
+    <rect x="220" y="51" width="174" height="83" rx="16" fill="#edf4f1" stroke="#aac8be" stroke-width="2"/>
+    <text x="307" y="88" text-anchor="middle" fill="#087f7c" font-weight="700">先验</text>
+    <text x="307" y="116" text-anchor="middle">P(雨)</text>
+    <rect x="220" y="183" width="174" height="83" rx="16" fill="#edf4f1" stroke="#aac8be" stroke-width="2"/>
+    <text x="307" y="220" text-anchor="middle" fill="#087f7c" font-weight="700">似然</text>
+    <text x="307" y="248" text-anchor="middle">P(x | 雨)</text>
+    <path d="M402 94 L481 146 M402 225 L481 179" fill="none" stroke="#718b88" stroke-width="4"/>
+    <polygon points="481,146 467,145 475,133" fill="#718b88"/>
+    <polygon points="481,179 475,191 467,179" fill="#718b88"/>
+    <circle cx="574" cy="163" r="79" fill="#d5e9de"/>
+    <text x="574" y="150" text-anchor="middle" fill="#087f7c" font-weight="700">后验概率</text>
+    <text x="574" y="182" text-anchor="middle">P(雨 | x)</text>
+  </g>
+</svg>
