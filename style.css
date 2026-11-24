@@ -458,6 +458,140 @@ figcaption { display: flex; align-items: center; justify-content: center; min-he
 .part2-card:focus-visible { border-color: var(--accent, #078482); }
 .part2-card b { color: var(--accent, #078482); font-size: 1.05rem; }
 .part2-card span { color: var(--ink, #203b40); }
+
+/* 第三篇内容原则：GraphAI供给事实与图示，V9负责章节层级、教学叙事、版式和导航。 */
+.graphai-part3-overview { gap:10px; }
+.graphai-part3-grid { display:grid; flex:1 1 auto; grid-template-columns:repeat(4,minmax(0,1fr)); grid-template-rows:repeat(4,minmax(0,1fr)); gap:10px; min-height:0; }
+.graphai-part3-card { display:flex; flex-direction:column; justify-content:center; min-width:0; padding:11px 14px; border:1px solid rgba(11,130,128,.22); border-radius:12px; background:rgba(235,243,240,.86); color:inherit; text-decoration:none; }
+.graphai-part3-card b { color:#087f7c; font-size:clamp(16px,1.1vw,19px); line-height:1.3; }
+.graphai-part3-card span { margin-top:4px; color:#526b72; font-size:clamp(13px,.9vw,16px); line-height:1.35; }
+.graphai-part3-card:hover,.graphai-part3-card:focus-visible { border-color:#078482; }
+.application-page { padding:27px 38px 18px; }
+.application-page h2 { margin:4px 0 8px; font-size:clamp(27px,2.2vw,35px); line-height:1.2; }
+.application-lead { color:var(--muted,#5c747c); font-size:clamp(16px,1.25vw,20px); line-height:1.5; margin:0 0 14px; }
+.application-layout { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:18px; flex:1 1 auto; min-height:0; align-items:stretch; }
+.application-figure,.application-notes { min-width:0; min-height:0; margin:0; border:1px solid rgba(11,130,128,.22); border-radius:14px; background:rgba(235,243,240,.86); }
+.application-figure { display:flex; flex-direction:column; padding:12px; }
+.application-figure svg { display:block; width:100%; flex:1 1 auto; min-height:0; border-radius:9px; background:#fff; }
+.application-figure figcaption { color:var(--muted,#5c747c); font-size:16px; line-height:1.45; padding:9px 4px 0; }
+.application-notes { display:flex; flex-direction:column; gap:10px; padding:16px; }
+.application-notes h3 { margin:0 0 5px; color:var(--accent,#087f7c); font-size:clamp(18px,1.45vw,22px); }
+.application-notes p { margin:0; color:#405e65; font-size:clamp(15px,1.08vw,18px); line-height:1.55; }
+.application-note { padding:11px 13px; border-radius:10px; background:rgba(255,255,255,.72); border-left:4px solid #15908d; }
+.application-note:nth-of-type(2) { border-left-color:#d89a35; }
+.application-note:nth-of-type(3) { border-left-color:#7083ba; }
+.application-reference { margin:auto 3px 0!important; padding-top:6px; font-size:16px!important; line-height:1.35!important; }
+.application-reference a { color:#087f7c; text-underline-offset:2px; }
+.application-eval-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:18px; flex:1 1 auto; min-height:0; }
+.application-eval-figure,.application-eval-notes { min-width:0; margin:0; border:1px solid rgba(11,130,128,.22); border-radius:14px; background:rgba(235,243,240,.86); padding:17px; }
+.application-eval-figure { display:flex; flex-direction:column; justify-content:center; }
+.application-eval-figure h3,.application-eval-card h3 { margin:0 0 8px; color:#087f7c; font-size:clamp(19px,1.4vw,23px); }
+.application-eval-figure svg { display:block; width:100%; max-height:280px; border-radius:9px; background:#fff; }
+.application-eval-figure figcaption { font-size:16px; line-height:1.45; color:#526b72; margin-top:10px; }
+.application-eval-definitions { display:grid; gap:9px; margin-top:14px; }
+.application-eval-definitions p { margin:0; padding:11px 13px; border-radius:9px; background:#fff; color:#405e65; font-size:clamp(16px,1.08vw,18px); line-height:1.4; }
+.application-eval-definitions strong { display:block; color:#087f7c; margin-bottom:2px; }
+.application-eval-definitions p:first-child strong { color:#a75f20; }
+.application-eval-context { margin:0 0 12px; color:#405e65; font-size:clamp(16px,1.07vw,18px); line-height:1.5; }
+.application-eval-notes > h3 { margin:0; color:#087f7c; font-size:clamp(19px,1.4vw,23px); }
+.application-eval-fixed { display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:12px 14px; border-radius:10px; background:#fff; border-left:4px solid #d28b3c; color:#405e65; font-size:clamp(16px,1.04vw,18px); }
+.application-eval-fixed strong { color:#9b5d24; font-size:clamp(22px,1.6vw,27px); }
+.application-eval-fixed small { color:#526b72; font-size:15px; }
+.application-eval-result { padding:14px; border-radius:10px; background:#fff; }
+.application-eval-result h4 { margin:0 0 12px; color:#087f7c; font-size:clamp(17px,1.14vw,20px); }
+.application-eval-bar-row { display:grid; grid-template-columns:minmax(110px,1fr) minmax(100px,2fr) 68px; gap:10px; align-items:center; margin:10px 0; color:#405e65; font-size:16px; }
+.application-eval-bar-row strong { color:#087f7c; font-size:18px; text-align:right; }
+.application-eval-bar-track { height:24px; border-radius:6px; background:#e4eeeb; overflow:hidden; }
+.application-eval-bar-track i { display:block; height:100%; border-radius:6px; background:#1a9995; }
+.application-eval-bar-row + .application-eval-bar-row .application-eval-bar-track i { background:#d38d40; }
+.application-eval-conclusion { margin:0; padding:11px 13px; border-radius:9px; background:#e1eee9; color:#405e65; font-size:clamp(16px,1.04vw,18px); line-height:1.45; }
+.application-eval-table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; color:#26474c; font-size:clamp(16px,1.12vw,19px); }
+.application-eval-table caption { padding:11px 12px; background:#dcece8; color:#087f7c; text-align:left; font-weight:700; }
+.application-eval-table th,.application-eval-table td { padding:14px 11px; text-align:left; border-bottom:1px solid #d3e1dd; }
+.application-eval-table thead th { color:#47666c; font-size:16px; line-height:1.3; }
+.application-eval-table tbody tr:last-child th,.application-eval-table tbody tr:last-child td { border-bottom:0; }
+.application-eval-table tbody th { overflow-wrap:anywhere; }
+.application-eval-table td strong { color:#087f7c; font-size:1.15em; }
+.application-eval-table td small { color:#526b72; }
+.application-eval-example { margin:14px 0 0; padding:12px; background:#fff; border-radius:9px; color:#405e65; font-size:17px; line-height:1.5; }
+.application-eval-notes { display:flex; flex-direction:column; gap:10px; }
+.application-eval-card { padding:11px 14px; border-left:4px solid #15908d; border-radius:10px; background:rgba(255,255,255,.76); }
+.application-eval-card:nth-child(2) { border-left-color:#d89a35; }
+.application-eval-card:nth-child(3) { border-left-color:#7083ba; }
+.application-eval-card p { margin:0; color:#405e65; font-size:clamp(16px,1.08vw,18px); line-height:1.5; }
+.application-eval-notes .application-reference { margin:auto 2px 0!important; }
+.application-eval-scope { margin:0; padding:8px 11px; border-radius:9px; background:#e7f0ed; color:#425f65; font-size:clamp(14px,.95vw,16px); line-height:1.4; }
+.application-bridge { margin:12px 0 0; padding:10px 14px; border-radius:10px; background:#e7f0ed; color:#425f65; font-size:15px; line-height:1.45; }
+.application-page footer { padding-top:12px; }
+/* Chapter 22–24: task-specific benchmark pages. */
+.app-assess-grid { display:grid; grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr); gap:18px; flex:1 1 auto; min-height:0; }
+.app-assess-panel { min-width:0; min-height:0; padding:18px 20px; border:1px solid rgba(11,130,128,.22); border-radius:14px; background:rgba(235,243,240,.86); display:flex; flex-direction:column; gap:12px; }
+.app-assess-panel h3 { margin:0; color:#087f7c; font-size:clamp(19px,1.45vw,23px); }
+.app-assess-panel p,.app-assess-step { margin:0; color:#405e65; font-size:clamp(16px,1.08vw,18px); line-height:1.48; }
+.app-assess-step { padding:11px 13px; border-left:4px solid #15908d; border-radius:9px; background:#fff; }
+.app-assess-step:nth-of-type(2) { border-left-color:#d89a35; }
+.app-assess-step:nth-of-type(3) { border-left-color:#7083ba; }
+.app-assess-step b { display:block; margin-bottom:3px; color:#087f7c; }
+.app-assess-takeaway { margin-top:auto!important; padding:10px 12px; border-radius:9px; background:#dcece8; }
+.app-assess-table { width:100%; border-collapse:collapse; overflow:hidden; background:#fff; border-radius:9px; font-size:clamp(16px,1.08vw,18px); color:#26474c; }
+.app-assess-table th,.app-assess-table td { padding:11px 9px; border-bottom:1px solid #d3e1dd; text-align:left; }
+.app-assess-table tr:last-child th,.app-assess-table tr:last-child td { border-bottom:0; }
+.app-assess-table thead { color:#087f7c; background:#dcece8; }
+.app-assess-sources { margin:10px 0 0; color:#526b72; font-size:16px; line-height:1.35; }
+.app-assess-sources a { color:#087f7c; }
+.application-followup-page .application-figure svg { height:min(61vh,500px); max-height:min(61vh,500px); flex:1 1 auto; }
+.application-followup-page .application-figure figcaption { background:transparent; color:#526b72; min-height:0; box-shadow:none; font-size:16px; }
+.application-followup-page .application-figure { justify-content:center; }
+.application-followup-page .application-notes { gap:12px; }
+.application-followup-page .application-note { flex:1 1 0; display:flex; flex-direction:column; justify-content:center; }
+.application-followup-page .application-notes h3 { font-size:clamp(20px,1.55vw,24px); }
+.application-followup-page .application-notes p { font-size:clamp(17px,1.18vw,20px); line-height:1.55; }
+@media(max-width:1050px) { .app-assess-grid { grid-template-columns:1fr; } }
+/* Chapter 21: preserve GraphAI p053's human face-perception material before the applications. */
+.face-opening-body { display:grid; grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr); gap:12px; flex:1 1 auto; min-height:0; }
+.face-human-panel,.face-identity-panel { min-height:0; border:1px solid rgba(11,130,128,.22); border-radius:14px; background:rgba(235,243,240,.86); }
+.face-human-panel { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:15px; padding:14px 16px; }
+.face-human-text { display:flex; flex-direction:column; justify-content:center; min-width:0; }
+.face-human-text h3,.face-identity-panel h3 { margin:0 0 7px; color:#087f7c; font-size:clamp(18px,1.4vw,22px); }
+.face-human-text p,.face-identity-panel p { margin:0 0 7px; color:#405e65; font-size:clamp(15px,1.06vw,18px); line-height:1.42; }
+.face-human-text p:last-child { margin-bottom:0; }
+.face-human-figure { min-width:0; min-height:0; margin:0; display:flex; flex-direction:column; justify-content:center; background:#fff; border-radius:10px; padding:8px; }
+.face-source-pair { display:grid; grid-template-columns:1fr 1fr; gap:8px; align-items:center; min-height:0; }
+.face-source-pair > div { display:flex; flex-direction:column; align-items:center; min-width:0; }
+.face-source-pair svg { display:block; width:100%; max-height:175px; background:#fff; }
+.face-source-pair span,.face-human-figure figcaption { display:block; color:#526b72; font-size:15px; text-align:center; line-height:1.3; }
+.face-human-figure figcaption { margin-top:6px; }
+.face-identity-panel { display:flex; flex-direction:column; justify-content:center; gap:8px; padding:13px 16px; }
+.face-identity-definition h3,.face-identity-examples h3 { font-size:clamp(16px,1.12vw,19px); margin-bottom:3px; }
+.face-identity-examples { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+.face-identity-examples > div { padding:9px 11px; border-left:4px solid #15908d; border-radius:9px; background:rgba(255,255,255,.8); }
+.face-identity-examples > div + div { border-left-color:#d89a35; }
+.face-identity-panel .application-reference { margin:0!important; padding-top:0; font-size:15px!important; }
+.face-method-figures { display:flex; flex-direction:column; gap:10px; min-width:0; min-height:0; }
+.face-method-figures .application-figure { flex:1 1 65%; }
+.face-method-eigenface { display:flex; flex-direction:column; flex:1 1 35%; min-height:0; margin:0; padding:10px; border:1px solid rgba(11,130,128,.22); border-radius:14px; background:rgba(235,243,240,.86); }
+.face-method-eigenface svg { display:block; width:100%; flex:1 1 auto; min-height:0; border-radius:9px; background:#fff; }
+.face-method-eigenface figcaption { color:#526b72; font-size:15px; line-height:1.35; padding-top:5px; }
+/* Keep both original face-method figures within one teaching page. */
+#v9-app-21-2 .face-method-figures .application-figure { flex:0 0 370px; }
+#v9-app-21-2 .face-method-figures .application-figure svg { height:310px; max-height:310px; flex:0 1 310px; }
+#v9-app-21-2 .face-method-eigenface { flex:0 0 175px; }
+#v9-app-21-2 .face-method-eigenface svg { height:130px; max-height:130px; flex:0 1 130px; }
+/* The evaluation table needs less vertical chrome, not smaller text. */
+#v9-app-21-3 .application-eval-figure,#v9-app-21-3 .application-eval-notes { padding:12px; }
+#v9-app-21-3 .application-eval-notes { gap:7px; }
+#v9-app-21-3 .application-eval-context { margin-bottom:0; }
+#v9-app-21-3 .application-eval-fixed { padding:7px 10px; }
+#v9-app-21-3 .application-eval-result { padding:9px 11px; }
+#v9-app-21-3 .application-eval-result h4 { margin-bottom:5px; }
+#v9-app-21-3 .application-eval-bar-row { margin:4px 0; }
+#v9-app-21-3 .application-eval-table caption { padding:6px 10px; }
+#v9-app-21-3 .application-eval-table th,#v9-app-21-3 .application-eval-table td { padding:7px 9px; }
+#v9-app-21-3 .application-eval-conclusion { padding:7px 10px; }
+@media(max-width:1050px) { .graphai-part3-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:none; } .graphai-part3-card { min-height:66px; } .application-page { min-height:0; } .application-layout,.application-eval-layout { grid-template-columns:1fr; } .application-figure svg { min-height:280px; } }
+@media(max-width:1050px) { .face-opening-body { grid-template-rows:none; } .face-human-panel { grid-template-columns:1fr; } .face-human-figure { min-height:220px; } .face-method-figures .application-figure svg { min-height:220px; } }
+@media(max-width:700px) { .face-identity-examples { grid-template-columns:1fr; } .face-source-pair svg { max-height:150px; } }
+@media(max-width:700px) { .application-page { padding:24px 20px 18px; } .application-figure svg { min-height:220px; } }
 .part2-card small,
 .part2-source-note { color: var(--muted, #5c747c); }
 .part2-card small { font-size: .78rem; }
@@ -2471,5 +2605,56 @@ dialog{max-width:850px;width:80%;max-height:80vh;overflow:auto;padding:32px;colo
   :is(#v7-p035,#v7-p035b,#v7-p036,#v7-p036b) .source-network-detail svg { height:clamp(395px,52vh,650px); }
 }
 @media(max-width:850px) { .source-network-detail { grid-template-columns:1fr; } .source-network-detail svg { height:280px; } }
+@media print {
+  #v9-part3-overview { display:flex!important; flex-direction:column!important; gap:2mm!important; }
+  #v9-part3-overview .graphai-part3-grid { display:grid!important; flex:1 1 auto!important; grid-template-columns:repeat(4,minmax(0,1fr))!important; grid-template-rows:repeat(4,minmax(0,1fr))!important; gap:2mm!important; }
+  #v9-part3-overview .graphai-part3-card { min-height:0!important; padding:2mm!important; }
+  #v9-part3-overview .graphai-part3-card b { font-size:10pt!important; }
+  #v9-part3-overview .graphai-part3-card span { font-size:8pt!important; }
+  .graphai-original-page { min-height:0!important; padding:8mm 10mm 6mm!important; }
+  .graphai-original-page h2 { margin:1mm 0 2mm!important; font-size:19pt!important; }
+  .graphai-source-figure { flex:1 1 auto!important; min-height:0!important; padding:2mm!important; }
+  .graphai-source-figure img { max-width:100%!important; max-height:148mm!important; }
+}
 @media print { .source-network-detail { grid-template-columns:1fr 1fr!important; gap:3mm!important; } .source-network-detail > figure,.source-network-detail > article { padding:2mm!important; } .source-network-detail svg { height:60mm!important; } .source-network-timeline { gap:2mm!important; } .source-network-timeline li { padding:2mm!important; } .source-network-timeline b { font-size:10pt!important; } .source-network-timeline span,.source-network-takeaway { font-size:8pt!important; } }
 @media print { .source-network-page { min-height:0!important; padding:6mm 8mm 4mm!important; } .source-network-page h2 { font-size:20pt!important; } .source-network-lead { font-size:9pt!important; margin-bottom:3mm!important; } .source-network-grid,.deep-source-layout { grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:3mm!important; } .source-network-grid article,.deep-source-layout article { padding:2mm!important; } .source-network-grid svg,.deep-source-layout svg,.deep-feature-source > figure svg { height:37mm!important; } .source-network-grid article p,.deep-source-layout article p,.source-network-summary,.deep-feature-source-notes p { font-size:8pt!important; } .deep-feature-source-notes { grid-template-columns:repeat(3,minmax(0,1fr))!important; } }
+
+/* Chapter 21: override the site's global dark figcaption strip for every face-recognition page. */
+#chapter-21 .application-page figcaption { background:transparent; color:#526b72; min-height:0; box-shadow:none; }
+#chapter-21 .face-human-figure figcaption { margin-top:6px; padding:3px 0 0; }
+
+/* Chapter 22: keep detection and character reading legible on one slide. */
+.plate-method-figures { display:grid; grid-template-rows:minmax(0,1.06fr) minmax(0,.94fr); gap:10px; min-width:0; min-height:0; }
+.plate-method-figures .application-figure { min-height:0; overflow:hidden; justify-content:center; }
+.plate-method-figures .application-figure svg { height:220px; max-height:220px; flex:0 1 220px; }
+#chapter-22 .application-page figcaption { background:transparent; color:#526b72; min-height:0; box-shadow:none; font-size:16px; }
+
+/* Chapters 23–24: show paired original examples without importing panel rules. */
+.source-duo-figures,.art-method-figures { display:grid; grid-template-rows:minmax(0,1fr) minmax(0,1fr); gap:10px; min-width:0; min-height:0; }
+.source-duo-figures .application-figure,.art-method-figures .application-figure { min-height:0; overflow:hidden; justify-content:center; }
+.source-duo-figures .application-figure svg { height:230px; max-height:230px; flex:0 1 230px; }
+#v9-app-25-1 .source-duo-figures { grid-template-rows:minmax(0,.7fr) minmax(0,1.3fr); }
+#v9-app-25-1 .source-duo-figures .application-figure:first-child svg { height:160px; max-height:160px; flex:0 1 160px; }
+#v9-app-25-1 .source-duo-figures .application-figure:last-child svg { height:305px; max-height:305px; flex:0 1 305px; }
+.art-method-figures { grid-template-rows:minmax(0,1.35fr) minmax(0,.65fr); }
+.art-method-figures .application-figure:first-child svg { height:310px; max-height:310px; flex:0 1 310px; }
+.art-method-figures .application-figure:last-child svg { height:112px; max-height:112px; flex:0 1 112px; }
+#chapter-23 .application-page figcaption { background:transparent; color:#526b72; min-height:0; box-shadow:none; font-size:16px; }
+#chapter-24 .application-page figcaption { background:transparent; color:#526b72; min-height:0; box-shadow:none; font-size:16px; }
+#v9-app-23-1 .application-figure { justify-content:center; overflow:hidden; }
+#v9-app-23-1 .application-figure svg { height:490px; max-height:490px; flex:0 1 490px; }
+/* Chapter 26: real audio and synchronised signal views. */
+.speech-demo{justify-content:center;padding:16px;gap:10px}.speech-demo h3{margin:0;color:#087f7c;font-size:23px}.speech-demo p{font-size:17px;line-height:1.5;margin:0}.speech-demo canvas{width:100%;height:auto;max-height:390px;object-fit:contain;cursor:crosshair;background:white;border-radius:9px}.speech-demo audio{width:100%;height:40px}.speech-controls{display:flex;align-items:center;gap:15px;font-size:16px}.speech-controls button,.speech-controls select{font:inherit;padding:5px 10px}.speech-demo figcaption{font-size:16px!important;padding:0!important}
+
+.asr-launch{display:inline-block;background:#087f7c;color:white!important;padding:10px 16px;border-radius:8px;font-weight:bold}
+.local-demo-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.local-demo-cta button.asr-launch{display:inline-block;border:0;background:#087f7c;color:#fff!important;cursor:pointer;font:inherit;font-weight:700;line-height:1.2;padding:10px 16px;border-radius:8px}
+.local-demo-cta button:disabled{opacity:.6;cursor:progress}
+.local-demo-cta span{font-size:clamp(15px,1vw,17px);color:#526d72;line-height:1.35}
+@media print{.app-assess-page .local-demo-cta button.asr-launch{display:inline-block!important}}
+/* ASR: preserve a large source diagram while giving technical comparisons room. */
+#v9-app-26-2 .application-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+#v9-app-26-2 .application-note{flex:0 0 auto}
+#v9-app-26-2 .application-notes{justify-content:space-between}
+#v9-app-26-2 .application-notes{gap:8px}
+#v9-app-26-2 .application-note{padding:9px 13px}
