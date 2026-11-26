@@ -1,0 +1,155 @@
+/* Dense slides: prioritize explanation, compact research history and source notes.
+   Screen-only; no clipping, scaling, hidden content, or changes to pagination. */
+@media screen and (min-width:1051px) {
+.v4-page.screen-dense {
+ --reading-size:20px; --compact-size:17px;
+ box-sizing:border-box; min-height:calc(100svh - 40px)!important;
+ padding:24px 36px 24px!important;
+}
+.v4-page.screen-dense>.v4-kicker{margin:0 0 8px!important}
+.v4-page.screen-dense>h2{font-size:clamp(28px,3.4vh,36px)!important;line-height:1.2!important;margin:0 0 14px!important}
+.v4-page.screen-dense p{line-height:1.45}
+.v4-page.screen-dense h3{line-height:1.3}
+.v4-page.screen-dense>footer{margin-top:auto!important;min-height:44px;flex-shrink:0;padding-top:10px}
+.v4-page.screen-dense :is(.part2-lead,.knowledge-opening,.neural-lead,.source-network-lead,.challenge-lead,.late-background,.application-lead){font-size:19px!important;line-height:1.45!important;margin:0 0 12px!important;padding-block:6px}
+.v4-page.screen-dense :is(figcaption,.page-references,.neural-references,.challenge-refs,.rk-sources,.app-assess-sources){font-size:15px!important;line-height:1.35!important;min-height:0!important;margin-block:6px!important}
+/* Previously, all paragraphs in these bespoke layouts were enlarged equally. */
+.v4-page.screen-dense .part-one-content p{font-size:19px!important;line-height:1.45!important;margin-bottom:6px!important}
+.v4-page.screen-dense .part-one-content h3{font-size:22px!important;line-height:1.3!important;margin-bottom:8px!important}
+.v4-page.screen-dense .part-one-content :is(.ai-routes,.era-table,.expert-grid){gap:12px;margin-top:8px}
+.v4-page.screen-dense .part-one-content :is(.ai-routes,.era-table,.expert-grid) article{padding:13px 16px}
+#v4-p-risk.screen-dense .risk-grid{gap:16px}
+#v4-p-risk.screen-dense .risk-column{gap:8px}
+#v4-p-risk.screen-dense .risk-column article{padding:10px 14px}
+#v4-p-risk.screen-dense .risk-lead{font-size:18px!important;margin-bottom:10px!important}
+#v4-p-risk.screen-dense .risk-sources{font-size:15px!important}
+#v7-part2-overview.screen-dense .part2-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-block:auto}
+#v7-part2-overview.screen-dense .part2-card{min-height:0;padding:16px 18px}
+#v7-part2-overview.screen-dense .part2-card b{font-size:21px}
+#v7-part2-overview.screen-dense .part2-card span{font-size:17px}
+#v7-ch10-3.screen-dense .knowledge-representation-row>*{padding:10px 12px;font-size:18px;line-height:1.4}
+#v7-ch10-3.screen-dense .knowledge-representation-head>*{padding:8px 12px}
+#v7-ch10-3.screen-dense .knowledge-representation-visuals{margin-top:10px;gap:14px}
+#v7-ch10-3.screen-dense .knowledge-representation-figure :is(img,svg,.expert-system-visual){height:clamp(150px,22vh,225px);max-height:225px;object-fit:contain}
+#v7-ch11-1.screen-dense :is(.ml-samuel-story,.ml-samuel-profile){padding:14px 16px}
+#v7-ch11-1.screen-dense .ml-samuel-profile img{height:clamp(140px,19vh,190px)}
+#v7-ch11-1.screen-dense .ml-samuel-story p{font-size:19px;line-height:1.45}
+#v7-ch11-1.screen-dense .ml-samuel-mechanism{margin-top:10px;gap:8px}
+#v7-ch11-1.screen-dense .ml-samuel-mechanism div{padding:9px}
+#v7-ch11-1.screen-dense .ml-samuel-award{font-size:16px;line-height:1.4;margin-top:8px;padding-top:8px}
+#v7-ch11-1.screen-dense .chapter-note{font-size:17px;line-height:1.4;margin-block:10px;padding:10px}
+#v7-ch12-4.screen-dense .gradient-descent-layout{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px}
+#v7-ch12-4.screen-dense .gradient-descent-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#v7-ch12-4.screen-dense .gradient-descent-cards article{min-height:0;padding:12px}
+#v7-ch12-4.screen-dense .gradient-descent-cards p{font-size:18px;line-height:1.45}
+#v7-ch12-4.screen-dense .gradient-descent-figure{min-height:0}
+#v7-ch12-4.screen-dense .loss-surface-interactive{height:clamp(280px,40vh,440px);min-height:0}
+#v7-hidden-multi-loss.screen-dense canvas{height:clamp(260px,36vh,390px);min-height:0;flex:0 0 auto}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes{gap:8px}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes article{padding:10px 12px}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes p{font-size:18px;line-height:1.4}
+#v7-hidden-multi-loss.screen-dense .multi-loss-formula{padding:5px;margin-block:5px;font-size:21px}
+/* Biological history is context; keep the model and its truth table prominent. */
+#v7-p033.screen-dense .neural-biology-history{gap:8px;margin-bottom:8px}
+#v7-p033.screen-dense .neural-biology-history b{font-size:16px}
+#v7-p033.screen-dense .neural-biology-history span{font-size:15px}
+#v7-p033.screen-dense .neural-biology-history small{font-size:13px;line-height:1.3}
+#v7-p033.screen-dense .neural-origin-visuals{grid-template-columns:1fr 1fr;grid-template-rows:auto;align-items:center}
+#v7-p033.screen-dense .neural-origin-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:12px}
+#v7-p033.screen-dense .neural-origin-visuals figure img{height:150px}
+#v7-p033.screen-dense .neural-mapping-table{font-size:17px}
+#v7-p033.screen-dense :is(td,th){padding:5px 8px}
+#v7-p033.screen-dense :is(.neural-model-caveat,.neural-explain,.neural-threshold p){font-size:16px!important;line-height:1.4!important;margin-block:6px;padding-block:6px}
+#v7-p033.screen-dense .neural-and-example{margin-block:8px;gap:12px}
+/* Long code remains scrollable inside its existing code panels. */
+#v7-p034c.screen-dense .neural-mlp-setup{margin:0;padding:0;min-height:0}
+#v7-p034c.screen-dense .neural-framework-grid{gap:12px}
+#v7-p034c.screen-dense .neural-framework-grid article{padding:10px}
+#v7-p034c.screen-dense .neural-framework-grid pre{height:clamp(190px,27vh,300px);max-height:300px;min-height:0;overflow:auto;font-size:15px;line-height:1.35}
+#v7-p034c.screen-dense .neural-framework-grid article>p{font-size:15px;margin:5px 0}
+#v7-p034c.screen-dense .neural-mlp-config{font-size:16px;line-height:1.4;margin:8px 0;padding:8px}
+#v7-p034c.screen-dense .neural-architecture-card svg{height:135px;max-height:135px}
+#v7-p034c.screen-dense .neural-training-flow{gap:6px}
+#v7-p034c.screen-dense .neural-training-flow article{padding:7px}
+#v7-p034c.screen-dense .neural-training-flow p{font-size:16px;line-height:1.35;margin:4px 0}
+/* Main diagrams and explanations above; research milestones use a smaller tier. */
+.v4-page.screen-dense :is(.deep17-layout,.challenge-layout,.late-grid){gap:14px}
+.v4-page.screen-dense :is(.deep17-layout>article,.deep17-layout>figure,.late-figure,.late-notes){padding:12px 14px}
+.v4-page.screen-dense .deep17-layout svg{height:clamp(210px,28vh,300px)}
+.v4-page.screen-dense .deep17-layout article p{font-size:18px;line-height:1.42}
+.v4-page.screen-dense .learning-principle-steps>div{padding:8px 0;margin:0}
+.v4-page.screen-dense .sequence-history-title{font-size:19px;margin:10px 0 6px}
+.v4-page.screen-dense .sequence-research li{padding:8px 10px}
+.v4-page.screen-dense .sequence-research b{font-size:16px}
+.v4-page.screen-dense .sequence-research span{font-size:15px;line-height:1.35}
+.v4-page.screen-dense :is(.source-network-summary,.late-takeaway){font-size:17px;line-height:1.4;margin-block:8px;padding:8px 10px}
+.v4-page.screen-dense :is(.late-media,.challenge-figure .late-media){min-height:0;height:clamp(200px,28vh,290px)}
+.v4-page.screen-dense .late-media :is(img,svg){max-height:100%;object-fit:contain}
+.v4-page.screen-dense .challenge-notes p{font-size:18px;line-height:1.45;margin-bottom:8px}
+.v4-page.screen-dense :is(.challenge-supplement,.challenge-status,.challenge-key-pair){margin-top:8px;padding:8px 12px;gap:10px}
+.v4-page.screen-dense :is(.challenge-supplement p,.challenge-status p,.challenge-key-pair p){font-size:16px;line-height:1.4;margin:4px 0}
+#v7-p046b.screen-dense .rk-original a{height:clamp(160px,22vh,220px)}
+#v7-p046b.screen-dense .rk-explanation{font-size:18px;line-height:1.4;margin-block:6px}
+#v7-p046b.screen-dense .rk-limit{font-size:16px;line-height:1.4;margin-block:6px}
+#v7-p046b.screen-dense .rk-reliability{margin-top:8px;gap:12px}
+#v7-p046b.screen-dense .rk-reliability article{padding:10px}
+#v7-p046b.screen-dense .rk-reliability p{font-size:17px;line-height:1.4}
+#v7-p051.screen-dense .late-notes p{font-size:18px;line-height:1.4}
+#v7-p051.screen-dense .late-history{margin-top:8px}
+#v7-p051.screen-dense .late-history li{font-size:15px;line-height:1.35;padding:8px}
+#v9-app-23-3.screen-dense .app-assess-grid{gap:14px}
+#v9-app-23-3.screen-dense .app-assess-panel{padding:14px}
+#v9-app-23-3.screen-dense .app-assess-panel :is(p,span,td,th){font-size:18px!important;line-height:1.45!important}
+#v9-app-23-3.screen-dense .app-assess-panel h3{font-size:23px!important;margin:0 0 10px}
+#v9-app-23-3.screen-dense .app-assess-step{padding:10px 12px;margin-bottom:8px}
+#v9-app-23-3.screen-dense .app-assess-step b{font-size:20px!important}
+#v9-app-23-3.screen-dense .app-assess-table :is(td,th){padding:8px 10px}
+#v9-app-23-3.screen-dense .app-assess-takeaway{font-size:16px!important}
+
+/* Dense custom layouts must not inherit screen-filling flex growth. */
+#v7-hidden-multi-loss.screen-dense .multi-loss-layout{flex:0 0 auto;align-items:start}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes{align-content:start}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes h3{font-size:19px;margin:0 0 5px}
+#v7-hidden-multi-loss.screen-dense .multi-loss-notes p{margin:4px 0}
+#v7-p033.screen-dense .neural-origin-layout,
+#v7-p034c.screen-dense .neural-bp-layout{flex:0 0 auto}
+#v7-p033.screen-dense .neural-biology-history article{padding:7px 9px}
+#v7-p033.screen-dense :is(.neural-origin-content,.neural-threshold){padding:9px 12px}
+#v7-p033.screen-dense h3{font-size:19px;margin:0 0 6px}
+#v7-p034c.screen-dense :is(.neural-bp-summary,.neural-architecture-card){padding:9px 12px}
+#v7-p034c.screen-dense :is(h3,h4){font-size:19px;margin:0 0 6px}
+#v7-p034c.screen-dense .neural-framework-grid pre{height:clamp(150px,22vh,230px);margin:5px 0}
+#v7-p039.screen-dense .paper-structure-panel img{height:clamp(100px,15vh,150px);object-fit:contain}
+#v7-p039.screen-dense .paper-structure-panel:nth-child(2) img{height:clamp(145px,22vh,210px)}
+#v7-p039.screen-dense .deep17-milestones{gap:6px;margin:6px 0 0}
+#v7-p039.screen-dense .deep17-milestones li{padding:6px 9px}
+#v7-p039.screen-dense .deep17-milestones b{font-size:16px}
+#v7-p039.screen-dense .deep17-milestones span{font-size:15px;line-height:1.35}
+#v7-p039.screen-dense h3{font-size:20px;margin:5px 0}
+#v7-p040b.screen-dense .seq2seq-figure{padding:7px 12px}
+#v7-p040b.screen-dense .seq2seq-figure svg{height:clamp(110px,17vh,165px);max-height:165px;aspect-ratio:auto}
+#v7-p040b.screen-dense .seq2seq-steps{gap:10px;margin-top:8px}
+#v7-p040b.screen-dense .seq2seq-steps article{padding:9px 12px}
+#v7-p040b.screen-dense .seq2seq-steps h3{font-size:19px;margin:0 0 5px}
+#v7-p040b.screen-dense .seq2seq-steps p{font-size:17px;line-height:1.4;margin:5px 0}
+#v7-p040b.screen-dense .seq2seq-history-title{font-size:19px;margin:8px 0 5px}
+#v7-p040b.screen-dense .seq2seq-history{gap:8px}
+#v7-p040b.screen-dense .seq2seq-history li{padding:7px 10px}
+#v7-p040b.screen-dense .seq2seq-history b{font-size:16px}
+#v7-p040b.screen-dense .seq2seq-history span{font-size:14px;line-height:1.35}
+#v7-p042b.screen-dense .deep17-layout{flex:0 0 auto}
+#v7-p042b.screen-dense .deep17-layout :is(svg,img){height:clamp(200px,29vh,290px);max-height:290px;object-fit:contain}
+#v7-p042b.screen-dense .learning-principle-steps{gap:5px;align-content:start}
+#v7-p042b.screen-dense .learning-principle-steps p{font-size:17px;line-height:1.4;margin:4px 0}
+#v7-p042b.screen-dense .learning-principle-steps h3{font-size:19px}
+#v7-p042b.screen-dense .source-network-summary{font-size:15px;line-height:1.35}
+#v7-p046b.screen-dense .llm-rk-panel{padding:10px 12px}
+#v7-p046b.screen-dense .llm-rk-panel h3{font-size:20px;margin:0 0 7px}
+#v7-p046b.screen-dense .rk-original{margin:0 0 5px}
+#v7-p046b.screen-dense .rk-original a{height:clamp(135px,19vh,185px)}
+#v7-p046b.screen-dense .rk-original figcaption{font-size:13px!important;padding:3px 0;margin:3px 0!important}
+#v7-p046b.screen-dense .rk-explanation{font-size:17px;line-height:1.4;margin:5px 0}
+#v7-p046b.screen-dense .rk-limit{font-size:14px;line-height:1.35;margin:4px 0}
+#v7-p046b.screen-dense .rk-reliability p{font-size:15px;line-height:1.35}
+#v7-p046b.screen-dense .rk-sources{font-size:13px!important;margin:5px 0}
+}
